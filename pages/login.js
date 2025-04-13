@@ -5,7 +5,7 @@ import { favouritesAtom, searchHistoryAtom } from '@/store';
 import { getFavourites, getHistory } from '@/lib/userData';
 import { useState } from "react";
 import { authenticateUser } from "@/lib/authenticate"; 
-import { setToken } from "@/lib/authenticate";
+//import { setToken } from "@/lib/authenticate";
 
 
 
@@ -69,7 +69,7 @@ window.dispatchEvent(new Event("tokenUpdated"));
                         </Button>
                     </Form>
                     <div className="mt-3 text-center">
-                        <small>Don't have an account? <a href="/register">Register here</a></small>
+                        <small>Don&apos;t have an account? <a href="/register">Register here</a></small>
                     </div>
                 </Card.Body>
             </Card>
