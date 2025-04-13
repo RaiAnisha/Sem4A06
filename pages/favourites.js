@@ -27,9 +27,9 @@ export default function Favourites() {
     }
 
     loadData();
-  }, []);
+  }, [router, setFavouritesList]);
 
-  if (!favouritesList) return null; // Don't show anything until data is loaded
+  if (!favouritesList) return null; 
 
   return (
     <>

@@ -31,7 +31,7 @@ export default function RouteGuard({ children }) {
         };
 
         checkAuth();
-    }, [router.pathname]);
+    }, [router.pathname, router, updateAtoms]);
 
     return <>{children}</>;
 }
